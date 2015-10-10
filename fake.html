@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Foundation datepicker</title>
+		<meta name="description" content="Port of bootstrap datepicker to Zurb Foundation framework">
+		<meta name="author" content="Peter Beno, najlepsiwebdesigner@gmail.com">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/foundation.min.css">
+		<link rel="stylesheet" href="css/foundation-icons.css">
+			<link rel="stylesheet" href="css/foundation-datepicker.min.css">
+		<!-- foundation datepicker start -->
+			<!-- DEPS -->
+
+			<!-- DATEPICKER FILES -->
+			<script src="http://code.jquery.com/jquery.min.js"></script>
+			<script src="js/foundation-datepicker.min.js"></script>
+		<!-- foundation datepicker end -->
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+					<h3>Examples</h3>
+					<p>Attached to a field with the format specified via options.</p>
+					<input type="text" class="span2" value="02-16-2012" id="dp1">
+
+		<script>
+			$(function () {
+				
+				$('#dp1').fdatepicker({
+					format: 'mm-dd-yyyy',
+					disableDblClickSelection: true
+				});
+				
+			});
+		</script>
+
+	</body>
+</html>
